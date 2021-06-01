@@ -48,7 +48,7 @@ public class LocacaoController {
 		servico.deleteById(id);
 		logger.info(">>>>>> 1. servico de exclusao chamado para o id => " + id);
 		ModelAndView modelAndView = new ModelAndView("consultarLocacao");
-		modelAndView.addObject("clientes", servico.findAll());
+		modelAndView.addObject("locacoes", servico.findAll());
 		return modelAndView;
 	}
 

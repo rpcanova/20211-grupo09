@@ -18,7 +18,7 @@ import com.fatec.scc.model.Imovel;
 @Controller
 @RequestMapping(path = "/sig")
 public class ImovelController {
-	Logger logger = LogManager.getLogger(ClienteController.class);
+	Logger logger = LogManager.getLogger(ImovelController.class);
 	@Autowired
 	ImovelServico servico;
 	

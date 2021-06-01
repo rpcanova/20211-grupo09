@@ -48,6 +48,7 @@ public class ClienteServicoI implements ClienteServico {
 				cliente.setEndereco(endereco);
 				repository.save(cliente);
 				logger.info(">>>>>> 4. comando save executado ");
+				sendMail(cliente);
 				modelAndView.addObject("clientes", repository.findAll());
 			} else {
 				logger.info(">>>>>> 4. comando save executado com erro endereço inválido. ");

@@ -1,5 +1,6 @@
 package com.fatec.scc.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,6 +14,7 @@ public class Locacao {
 	private Long id;
 	@NotNull
 	@Size(min = 11, max = 11, message = "O CEP deve ter 11 dígitos, não deve conter pontos, nem hífen.")
+	@Column(unique = true)
 	private String cpf;
 	@NotNull
 	private String dataInicio;
