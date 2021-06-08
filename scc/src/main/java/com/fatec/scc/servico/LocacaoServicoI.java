@@ -1,5 +1,7 @@
 package com.fatec.scc.servico;
 
+import java.util.List;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -66,5 +68,11 @@ public class LocacaoServicoI implements LocacaoServico {
 		Endereco endereco = template.getForObject(url, Endereco.class, cep);
 		logger.info(">>>>>> 3. obtem endereco ==> " + endereco.toString());
 		return endereco.getLogradouro();
+	}
+
+	@Override
+	public List<Locacao> findByIdCpf(Long id, String cpf) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

@@ -1,5 +1,7 @@
 package com.fatec.scc.servico;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -18,4 +20,6 @@ public interface LocacaoServico {
 	public ModelAndView saveOrUpdate(Locacao locacao);
 
 	public String obtemEndereco(String cep);
+
+	public List<Locacao> findByIdCpf(Long id, String cpf);
 }
