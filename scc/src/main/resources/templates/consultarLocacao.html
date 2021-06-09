@@ -30,16 +30,16 @@
 				rel="stylesheet" />
 		</div>
 		<div class="panel-body" th:switch="${locacoes}">
-			<h5 th:case="null">Não existem locações cadastradas ainda!</h5>
+			<h5 th:case="null">Não existem locações cadastrados ainda!</h5>
 			<div th:case="*">
 				<table class="table">
 					<thead>
 						<tr>
 							<th>ID</th>
 							<th>CPF</th>
-							<th>Data de Início</th>
-							<th>Data de Final</th>
 							<th>CEP</th>
+							<th>Data de Início</th>
+							<th>Data de Fim</th>
 							<th>Endereço</th>
 						</tr>
 					</thead>
@@ -47,14 +47,14 @@
 						<tr th:each="locacao : ${locacoes}">
 							<td th:text="${locacao.id}"></td>
 							<td th:text="${locacao.cpf}"></td>
-							<td th:text="${locacao.dataInicio}"></td>
-							<td th:text="${locacao.dataFim}"></td>
 							<td th:text="${locacao.cep}"></td>
 							<td th:text="${locacao.endereco}"></td>
+							<td th:text="${locacao.dataInicio}"></td>
+							<td th:text="${locacao.dataFim}"></td>
 							<td>
 								<div class="btn-group pull-right">
 									<a class="btn btn-sm btn-primary"
-										th:href="@{/sig/locacoes/cpf}(cpf=${locacao.cpf})}">Editar</a>
+										th:href="@{/sig/locacoes/{cpf}(cpf=${locacao.cpf})}">Editar</a>
 									<a class="delete btn btn-sm btn-danger"
 										th:href="@{/sig/locacao/{id}(id=${locacao.id})}">Excluir</a>
 								</div>
