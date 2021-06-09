@@ -130,7 +130,7 @@ public class Cliente {
 
 	@Override
 	public String toString() {
-		return "Cliente [id=" + id + ", cpf=" + cpf + ", nome=" + nome + ", email=" + email + ", cep=" + cep
-				+ ", endereco=" + endereco + "]";
+		return "Cliente cadastrado com sucesso!\n ID: " + id + "\n CPF: " + cpf + "\nNome: " + nome + "\nEmail: " + email + "CEP: " + cep
+				+ "\nEndereço: " + endereco;
 	}
 }

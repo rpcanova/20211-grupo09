@@ -55,8 +55,7 @@ public class LocacaoController {
 				}
 			}
 
-			if ((imovel != null && cliente != null && locacoes == null)
-					|| (imovel != null && cliente != null && locacaoEmAberto == false)) {
+			if ((imovel != null && cliente != null && locacoes == null) || (imovel != null && cliente != null && locacaoEmAberto == false)) {
 				locacao.setDataInicio(locacao.getDataInicio());
 				locacaoServico.saveOrUpdate(locacao);
 				mv.addObject("message", "Locação registrada");
