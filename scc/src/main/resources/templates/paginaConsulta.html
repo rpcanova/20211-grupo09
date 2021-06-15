@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<tr th:each="cliente : ${clientes}">
+		<td th:text="${cliente.id}"></td>
+		<td th:text="${cliente.cpf}"></td>
+		<td th:text="${cliente.nome}"></td>
+		<td th:text="${cliente.email}"></td>
+		<td th:text="${cliente.cep}"></td>
+		<td th:text="${cliente.endereco}"></td>
+	</tr>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns ="http: //www.w3.org /1999 /xhtml "
+ xmlns:th ="https: //www.thymeleaf.org "
+ xmlns:sec ="https: //www.thymeleaf.org /thymeleaf-extras-springsecurity3">
+ <head>
+ <style type ="text /css ">
+ login-page {
+	width: 360px;
+	padding: 8% 0 0;
+	margin: auto;
+}
+
+body {
+	background: #1E90FF; /* fallback for old browsers */
+	background: -webkit-linear-gradient(right, #4169E1, #87CEEB);
+	background: -moz-linear-gradient(right, #4169E1, #87CEEB);
+	background: -o-linear-gradient(right, #4169E1, #87CEEB);
+	background: linear-gradient(to left, #4169E1, #87CEEB);
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+img{
+	width:100%;
+	height: 100%;
+	margin-left: 30px;
+	margin-top: -20px;
+	max-width: 1300px;
+	max-height: 600px;
+	
+	object-fit: cover;
+}
+
+</style>
+</head>
