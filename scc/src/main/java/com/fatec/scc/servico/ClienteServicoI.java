@@ -4,8 +4,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.MailSender;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,8 +18,6 @@ public class ClienteServicoI implements ClienteServico {
 
 	@Autowired
 	private ClienteRepository repository;
-	@Autowired
-	private MailSender mailSender;
 
 	public Iterable<Cliente> findAll() {
 		return repository.findAll();
